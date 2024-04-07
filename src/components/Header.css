@@ -1,0 +1,40 @@
+.header {
+  height: 50px;
+  display: flex;
+  border-bottom: thin solid var(--separator-color);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header-menu {
+  width: 40%;
+}
+
+.header-list {
+  width: 100%;
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header-item {
+  text-align: end;
+}
+
+.header-link {
+  color: var(--text-color);
+  transition: color .3s ease-out;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.header-link:hover {
+  color: var(--accent-color-3);
+}
+
+.header-span {
+  margin-right: 7px;
+}
+

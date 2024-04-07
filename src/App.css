@@ -1,0 +1,8 @@
+.title {
+  display: inline-block;
+  background: #fff;
+  background: linear-gradient(to right, var(--text-gradient));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
