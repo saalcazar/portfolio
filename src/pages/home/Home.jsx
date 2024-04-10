@@ -1,7 +1,9 @@
+import About from "./about/About"
+
 const Home = () => {
   return (
     <main className="main">
-      <h1 className="kanit-light title">Web programer</h1>
+      <About />
     </main>
   )
 }

@@ -1,0 +1,64 @@
+.about-article {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "profile profile description description description"
+  ;
+  margin-top: 1rem;
+}
+
+.about-img {
+  justify-self: center;
+  grid-area: profile;
+  width: 330px;
+  border-radius: 2rem;
+  border: thin solid var(--separator-color);
+  transition: border-radius .3s ease;
+}
+
+.about-img:hover {
+  border-radius: 0;
+}
+
+.about-description {
+  justify-self: center;
+  background-color: var(--bk-color-2);
+  grid-area: description;
+  border-radius: 2rem;
+  border: thin solid var(--separator-color);
+  padding: 1.5rem;
+}
+
+.about-p {
+  margin-top: 1rem;
+}
+
+.about-lema {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.about-lema::after{
+  content: '';
+  display: block;
+  background-color: var(--accent-color-1);
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 2rem;
+  transform: skew(5deg, 1deg);
+}
+
+.about-lema::before{
+  content: '';
+  display: block;
+  background-color: var(--accent-color-1);
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 2rem;
+  transform: skew(-5deg, -1deg);
+  background: linear-gradient(to left, var(--text-gradient));
+}
