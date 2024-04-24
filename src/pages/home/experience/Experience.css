@@ -1,0 +1,26 @@
+.experience-cards {
+  display: flex;
+  gap: 5px;
+}
+
+.experience-card {
+  background-color: var(--bk-color-2);
+  border: thin solid var(--separator-color);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.experience-data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.experience-d {
+  width: 100%;
+  border: thin solid var(--separator-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}

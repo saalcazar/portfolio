@@ -1,9 +1,15 @@
+.title-about {
+  text-align: center;
+  width: 100%;
+}
+
 .about-article {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
   grid-template-rows: auto;
   grid-template-areas:
-    "profile profile description description description"
+    "profile description description"
   ;
   margin-top: 1rem;
 }
@@ -12,7 +18,7 @@
   justify-self: center;
   grid-area: profile;
   width: 330px;
-  border-radius: 2rem;
+  border-radius: 10px;
   border: thin solid var(--separator-color);
   transition: border-radius .3s ease;
 }
@@ -25,7 +31,7 @@
   justify-self: center;
   background-color: var(--bk-color-2);
   grid-area: description;
-  border-radius: 2rem;
+  border-radius: 10px;
   border: thin solid var(--separator-color);
   padding: 1.5rem;
 }
